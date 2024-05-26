@@ -1,9 +1,13 @@
 package hw2;
 
+import java.util.Scanner;
+
 public class WordsFromLineApp {
     public static void main(String[] args) {
         String[] givenStringsArray = {"anger", "awe", "joy", "love", "grief"};
-        String str = "yliausoenvjw";//"abcdkasdfvkadf";//"griefgriefgrief";//"angerw";//
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter word or set of letters in lower case: ");
+        String str = scanner.next();//"yliausoenvjw";//"abcdkasdfvkadf";//"griefgriefgrief";//"angerw";//
         System.out.println(getCountOfFeelings(givenStringsArray, str) + " feelings");
     }
 
